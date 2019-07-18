@@ -1,7 +1,7 @@
-Testing GCRun container behaviour
+# Testing GCRun container behaviour
 
-Generate a random number at container startup, and return that for every request.
+When node starts, creates a `start_time` variable with current epoch value.
 
-Use this to see how often the number changes.
+When request comes in returns both `start_time` and the current epoch value.
 
-Could be current date / epoch, rather than random.
+Use to better understand GCRun container lifecycle
